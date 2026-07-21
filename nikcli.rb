@@ -2,25 +2,25 @@
 # frozen_string_literal: true
 
 # This file was auto-generated. DO NOT EDIT.
-# Last updated: 2026-07-21T14:23:23.193Z
+# Last updated: 2026-07-21T15:49:35.240Z
 class Nikcli < Formula
   desc "The AI coding agent built for the terminal."
   homepage "https://github.com/nikomatt69/nikcli"
-  version "1.182.0"
+  version "1.183.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nikomatt69/nikcli/releases/download/v1.182.0/nikcli-ai-darwin-x64.zip"
-      sha256 "dc8f25319ded7eec266758584d76ac06befd78825cc8b89e1f5c986d0c9bc1e8"
+      url "https://github.com/nikomatt69/nikcli/releases/download/v1.183.0/nikcli-ai-darwin-x64.zip"
+      sha256 "d8d19d99e4a05bf8a56c5d4899161813879112620441fec2a1b42750f071a2c3"
 
       def install
         bin.install "nikcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nikomatt69/nikcli/releases/download/v1.182.0/nikcli-ai-darwin-arm64.zip"
-      sha256 "fedfafcc6fbbdd6b11fe9e6b18cd15f02fc27b98a89c93da40bbe908cc6561db"
+      url "https://github.com/nikomatt69/nikcli/releases/download/v1.183.0/nikcli-ai-darwin-arm64.zip"
+      sha256 "d6fde1cd03483d7d9516249ca0a466075fcc362c6302adfa5c3b524d7c5f7aa3"
 
       def install
         bin.install "nikcli"
@@ -30,16 +30,16 @@ class Nikcli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nikomatt69/nikcli/releases/download/v1.182.0/nikcli-ai-linux-x64.tar.gz"
-      sha256 "ffec31da398ad02d0eca2109a0a3539af052e4772392aaf8cdfde2df9dd4770e"
+      url "https://github.com/nikomatt69/nikcli/releases/download/v1.183.0/nikcli-ai-linux-x64.tar.gz"
+      sha256 "1bf96477c9f238ddc0fba4b3f91b58107008f536ad2b120aed2ecbad622a7fb2"
 
       def install
         bin.install "nikcli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/nikomatt69/nikcli/releases/download/v1.182.0/nikcli-ai-linux-arm64.tar.gz"
-      sha256 "4bf32eb57bbc6cb48cd4b1cd345918a8a4f6377546aa688bd8c566964a0c1d4f"
+      url "https://github.com/nikomatt69/nikcli/releases/download/v1.183.0/nikcli-ai-linux-arm64.tar.gz"
+      sha256 "d30abe34a4a52eb1d1364e36e53cd5ea7fd1a8cb1911f0e436abc7b194dd9071"
 
       def install
         bin.install "nikcli"
